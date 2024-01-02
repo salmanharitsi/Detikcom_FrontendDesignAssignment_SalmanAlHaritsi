@@ -2,422 +2,227 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@500&family=Inconsolata:wght@600&family=Kanit:wght@200&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <title>Sudirman Run 2023</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@500&family=Inconsolata:wght@600&family=Kanit:wght@200&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	</style>
+
+	<!-- Bootstrap CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+		</script>
+
+	<title>Sudirman Run 2023</title>
 </head>
 
 <body>
-    <header>
+	<header>
 
-        <!-- main background -->
-        <div class="main-bg" id="home">
-            <img src="asset/header/bg-main.png" alt="">
-        </div>
-        <div class="main-bg-mobile" id="home">
-            <img src="asset/header/bg-mobile.png" alt="">
-        </div>
+		<!-- main background -->
+		<div class="main-bg" id="home">
+			<img src="asset/header/bg-main.png" alt="">
+		</div>
+		<div class="main-bg-mobile" id="home">
+			<img src="asset/header/bg-mobile.png" alt="">
+		</div>
 
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg position-fixed w-100 p-0 z-3">
-            <div class="container-nav">
-                <div class="nav-head">
-                    <a class="navbar-brand" href="#">
-                        <img src="asset/header/navbar-brand.png" alt="">
-                    </a>
-                    <button class="navbar-toggler" id="toggleButton" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span id="iconToggle" class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg position-fixed w-100 p-0 z-3">
+			<div class="container-nav">
+				<div class="nav-head">
+					<a class="navbar-brand" href="#">
+						<img src="asset/header/navbar-brand.png" alt="">
+					</a>
+					<button class="navbar-toggler" id="toggleButton" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span id="iconToggle" class="navbar-toggler-icon"></span>
+					</button>
+				</div>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#main-about">Tentang Acara</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#galeri">Galeri</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#artikel">Berita</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-btn-link" href="https://event.detik.com/"
-                                target="_blank"><button><span>Registrasi</span></button></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#main-about">Tentang Acara</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#galeri">Galeri</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#artikel">Berita</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-btn-link" href="https://event.detik.com/"
+								target="_blank"><button><span>Registrasi</span></button></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-        <!-- main title -->
-        <section>
-            <div class="main-title">
-                <div class="big-title">
-                    <h1>sudirman<br><span>run 2023</span></h1>
-                </div>
-                <div class="img-title">
-                    <img src="asset/header/logo-event.png" alt="">
-                </div>
-                <div class="btn-title">
-                    <a href="#main-about"><button>tentang acara</button></a>
-                </div>
-            </div>
-        </section>
-    </header>
+		<!-- main title -->
+		<section>
+			<div class="main-title">
+				<div class="big-title">
+					<h1>sudirman<br><span>run 2023</span></h1>
+				</div>
+				<div class="img-title">
+					<img src="asset/header/logo-event.png" alt="">
+				</div>
+				<div class="btn-title">
+					<a href="#main-about"><button>tentang acara</button></a>
+				</div>
+			</div>
+		</section>
+	</header>
 
-    <body>
-        <section>
+	<body>
+		<section>
 
-            <!-- main about -->
-            <div class="main-about" id="main-about">
-                <div class="about-col-1">
-                    <div class="about1">
-                        <div class="maps">
-                            <img src="asset/body/about/map.png" alt="">
-                        </div>
-                        <div class="teks">
-                            <h1 class="about-h1">10k fun run</h1>
-                            <p class="about-p">Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari dimulai dari
-                                Bundaran HI hingga Patung Pemuda Membangun di Senayan lalu kembali lagi ke Bundaran HI!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-col-2">
-                    <div class="about2">
-                        <h1 class="about2-h1">gratis dan berhadiah</h1>
-                        <p class="about2-p">Pendaftaran gratis! Ajak keluarga anda dan menangkan hadiah total puluhan
-                            juta rupiah doorprize menarik!</p>
-                    </div>
-                    <div class="about3">
-                        <h1 class="about2-h1">50+ tenant bazzar </h1>
-                        <p class="about2-p">Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman Run 2023
-                            mulai dari F&B hingga fashion</p>
-                    </div>
-                    <div class="about4">
-                        <div class="perform">
-                            <img src="asset/body/about/perform.png" alt="">
-                        </div>
-                        <div class="teks2">
-                            <h1 class="about2-h1">special performance</h1>
-                            <p class="about2-p">Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan
-                                lainnya!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			<!-- main about -->
+			<div class="main-about" id="main-about">
+				<div class="about-col-1">
+					<div class="about1">
+						<div class="maps">
+							<img src="asset/body/about/map.png" alt="">
+						</div>
+						<div class="teks">
+							<h1 class="about-h1">10k fun run</h1>
+							<p class="about-p">Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari dimulai dari
+								Bundaran HI hingga Patung Pemuda Membangun di Senayan lalu kembali lagi ke Bundaran HI!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-col-2">
+					<div class="about2">
+						<h1 class="about2-h1">gratis dan berhadiah</h1>
+						<p class="about2-p">Pendaftaran gratis! Ajak keluarga anda dan menangkan hadiah total puluhan
+							juta rupiah doorprize menarik!</p>
+					</div>
+					<div class="about3">
+						<h1 class="about2-h1">50+ tenant bazzar </h1>
+						<p class="about2-p">Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman Run 2023
+							mulai dari F&B hingga fashion</p>
+					</div>
+					<div class="about4">
+						<div class="perform">
+							<img src="asset/body/about/perform.png" alt="">
+						</div>
+						<div class="teks2">
+							<h1 class="about2-h1">special performance</h1>
+							<p class="about2-p">Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan
+								lainnya!</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            <!-- about button -->
-            <div class="btn-about">
-                <div class="btn-title">
-                    <a href="https://event.detik.com/" target="_blank"><button>daftar sekarang</button></a>
-                </div>
-            </div>
-        </section>
+			<!-- about button -->
+			<div class="btn-about">
+				<div class="btn-title">
+					<a href="https://event.detik.com/" target="_blank"><button>daftar sekarang</button></a>
+				</div>
+			</div>
+		</section>
 
-        <section>
+		<section>
 
-            <!-- support -->
-            <div class="support">
-                <h1>didukung oleh</h1>
-                <div class="sup-parent">
-                    <div class="sup-slide">
-                        <div class="sup-item">
-                            <img src="asset/body/support/alphajwc.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/500.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/insignia.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/sequoia.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/sginnovate.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/wavemaker.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/GFC.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/goldengate.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/alphajwc.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/500.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/insignia.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/sequoia.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/sginnovate.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/wavemaker.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/GFC.svg" alt="">
-                        </div>
-                        <div class="sup-item">
-                            <img src="asset/body/support/goldengate.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+			<!-- support -->
+			<div class="support">
+				<h1>didukung oleh</h1>
+				<div class="sup-parent">
+					<!-- set data from JavaScript -->
+					<div class="sup-slide"></div>
+				</div>
+			</div>
+		</section>
 
-        <section>
+		<section>
 
-            <!-- galeri -->
-            <div class="galeri" id="galeri">
-                <h1>galeri sudirman run 2022</h1>
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="20000">
-                            <img src="asset/body/galeri/foto1.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="20000">
-                            <img src="asset/body/galeri/foto2.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="20000">
-                            <img src="asset/body/galeri/foto3.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="20000">
-                            <img src="asset/body/galeri/foto4.png" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <div class="btn-prev">
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                    </div>
+			<!-- galeri -->
+			<div class="galeri" id="galeri">
+				<h1>galeri sudirman run 2022</h1>
+				<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+					<!-- set data from JavaScript -->
+					<div class="carousel-inner"></div>
+					<div class="btn-prev">
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+					</div>
 
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <div class="img-active">
-                    <div class="img-actv-child active" data-bs-target="">
-                        <img src="asset/body/galeri/foto1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="img-actv-child">
-                        <img src="asset/body/galeri/foto2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="img-actv-child">
-                        <img src="asset/body/galeri/foto3.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="img-actv-child">
-                        <img src="asset/body/galeri/foto4.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-            </div>
-        </section>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<!-- set data from JavaScript -->
+				<div class="img-active"></div>
+			</div>
+		</section>
 
-        <article>
+		<article>
 
-            <!-- artikel -->
-            <div class="artikel" id="artikel">
-                <h1>artikel terkait</h1>
-                <div class="btn-artikel">
-                    <a class="active" onclick="toggle()"><button>artikel</button></a>
-                    <a onclick="toggle()"><button>foto</button></a>
-                    <a onclick="toggle()"><button>video</button></a>
-                </div>
-                <div class="all-artikel">
-                    <a href="https://health.detik.com/kebugaran/d-7056398/sukses-finish-marathon-di-jakarta-osha-penyandang-autisme-beberkan-prosesnya"
-                        target="_blank" class="item-artikel">
-                        <div class="img-artikel">
-                            <img src="asset/body/artikel/artikel1.png" alt="">
-                        </div>
-                        <div class="foto">
-                            <div class="img-foto">
-                                <img src="asset/body/artikel/Camera.png" alt="">
-                            </div>
-                            <p>5 foto</p>
-                        </div>
-                        <div class="video">
-                            <div class="img-video">
-                                <img src="asset/body/artikel/Play.png" alt="">
-                            </div>
-                            <p>01:45</p>
-                        </div>
-                        <div class="teks-artikel">
-                            <h3>Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
-                            <p>Sabtu, 25 Nov 2023 20:00 WIB</p>
-                        </div>
-                    </a>
-                    <a href="#" class="item-artikel">
-                        <div class="img-artikel">
-                            <img src="asset/body/artikel/artikel2.png" alt="">
-                        </div>
-                        <div class="foto">
-                            <div class="img-foto">
-                                <img src="asset/body/artikel/Camera.png" alt="">
-                            </div>
-                            <p>5 foto</p>
-                        </div>
-                        <div class="video">
-                            <div class="img-video">
-                                <img src="asset/body/artikel/Play.png" alt="">
-                            </div>
-                            <p>01:45</p>
-                        </div>
-                        <div class="teks-artikel">
-                            <h3>Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023: See Nature</h3>
-                            <p>Selasa, 28 Nov 2023 07:42 WIB</p>
-                        </div>
-                    </a>
-                    <a href="#" class="item-artikel">
-                        <div class="img-artikel">
-                            <img src="asset/body/artikel/artikel3.png" alt="">
-                        </div>
-                        <div class="foto">
-                            <div class="img-foto">
-                                <img src="asset/body/artikel/Camera.png" alt="">
-                            </div>
-                            <p>5 foto</p>
-                        </div>
-                        <div class="video">
-                            <div class="img-video">
-                                <img src="asset/body/artikel/Play.png" alt="">
-                            </div>
-                            <p>01:45</p>
-                        </div>
-                        <div class="teks-artikel">
-                            <h3>Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023</h3>
-                            <p>Minggu, 26 Nov 2023 13:04 WIB</p>
-                        </div>
-                    </a>
-                    <a href="#" class="item-artikel">
-                        <div class="img-artikel">
-                            <img src="asset/body/artikel/artikel4.png" alt="">
-                        </div>
-                        <div class="foto">
-                            <div class="img-foto">
-                                <img src="asset/body/artikel/Camera.png" alt="">
-                            </div>
-                            <p>5 foto</p>
-                        </div>
-                        <div class="video">
-                            <div class="img-video">
-                                <img src="asset/body/artikel/Play.png" alt="">
-                            </div>
-                            <p>01:45</p>
-                        </div>
-                        <div class="teks-artikel">
-                            <h3>Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton Maliq & D'essentials
-                            </h3>
-                            <p>Sabtu, 18 Nov 2023 17:39 WIB</p>
-                        </div>
-                    </a>
-                    <a href="#" class="item-artikel">
-                        <div class="img-artikel">
-                            <img src="asset/body/artikel/artikel5.png" alt="">
-                        </div>
-                        <div class="foto">
-                            <div class="img-foto">
-                                <img src="asset/body/artikel/Camera.png" alt="">
-                            </div>
-                            <p>5 foto</p>
-                        </div>
-                        <div class="video">
-                            <div class="img-video">
-                                <img src="asset/body/artikel/Play.png" alt="">
-                            </div>
-                            <p>01:45</p>
-                        </div>
-                        <div class="teks-artikel">
-                            <h3>CT Arsa Charity Fun Run 2023 Bertabur Emas</h3>
-                            <p>Kamis, 16 Nov 2023 16:34 WIB</p>
-                        </div>
-                    </a>
-                    <a href="#" class="item-artikel">
-                        <div class="img-artikel">
-                            <img src="asset/body/artikel/artikel6.png" alt="">
-                        </div>
-                        <div class="foto">
-                            <div class="img-foto">
-                                <img src="asset/body/artikel/Camera.png" alt="">
-                            </div>
-                            <p>5 foto</p>
-                        </div>
-                        <div class="video">
-                            <div class="img-video">
-                                <img src="asset/body/artikel/Play.png" alt="">
-                            </div>
-                            <p>01:45</p>
-                        </div>
-                        <div class="teks-artikel">
-                            <h3>BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta</h3>
-                            <p>Minggu, 12 Nov 2023 11:55 WIB</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="btn-title">
-                    <a href="https://www.detik.com/search/searchall?query=fun+run&siteid=2"
-                        target="_blank"><button>lihat lebih banyak</button></a>
-                </div>
-            </div>
-        </article>
-    </body>
+			<!-- artikel -->
+			<div class="artikel" id="artikel">
+				<h1>artikel terkait</h1>
+				<div class="btn-artikel">
+					<a class="active" onclick="toggle()"><button>artikel</button></a>
+					<a onclick="toggle()"><button>foto</button></a>
+					<a onclick="toggle()"><button>video</button></a>
+				</div>
+				<!-- set data from JavaScript -->
+				<div class="all-artikel"></div>
+				<div class="btn-title">
+					<a href="https://www.detik.com/search/searchall?query=fun+run&siteid=2" target="_blank">
+						<button>lihat lebih banyak</button>
+					</a>
+				</div>
+			</div>
+		</article>
+	</body>
 
-    <footer>
-        <div class="foot-img">
-            <img src="asset/footer/img-foot.jpg" alt="">
-        </div>
-        <div class="footer">
-            <div class="footer-brand">
-                <img src="asset/footer/brand-foot.png" alt="">
-            </div>
-            <div class="footer-kontak">
-                <p>Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk
-                    masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu
-                    menangkan hadiah utama serta doorprize dengan total puluhan juta rupiah</p>
-                <div class="footer-sosmed">
-                    <p>Connect With Us</p>
-                    <div class="all-sosmed">
-                        <a href=""><img src="asset/footer/facebook.png" alt=""></a>
-                        <a href=""><img src="asset/footer/twitter.png" alt=""></a>
-                        <a href=""><img src="asset/footer/instagram.png" alt=""></a>
-                        <a href=""><img src="asset/footer/linkedin.png" alt=""></a>
-                        <a href=""><img src="asset/footer/youtube.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="line-foot"></div>
-            <p>Copyright @ 2023 detikcom. All right reserved</p>
-        </div>
-    </footer>
+	<footer>
+		<div class="foot-img">
+			<img src="asset/footer/img-foot.jpg" alt="">
+		</div>
+		<div class="footer">
+			<div class="footer-brand">
+				<img src="asset/footer/brand-foot.png" alt="">
+			</div>
+			<div class="footer-kontak">
+				<p>Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk
+					masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu
+					menangkan hadiah utama serta doorprize dengan total puluhan juta rupiah</p>
+				<div class="footer-sosmed">
+					<p>Connect With Us</p>
+					<div class="all-sosmed">
+						<a href=""><img src="asset/footer/facebook.png" alt=""></a>
+						<a href=""><img src="asset/footer/twitter.png" alt=""></a>
+						<a href=""><img src="asset/footer/instagram.png" alt=""></a>
+						<a href=""><img src="asset/footer/linkedin.png" alt=""></a>
+						<a href=""><img src="asset/footer/youtube.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="line-foot"></div>
+			<p>Copyright @ 2023 detikcom. All right reserved</p>
+		</div>
+	</footer>
 
-    <script src="script.js"></script>
+	<script src="script.js"></script>
+
 </body>
 
 </html>
