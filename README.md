@@ -1,4 +1,4 @@
-<h1>Assignment Detikcom Internship - FrontEnd Designer</h1>
+<h1>Assignment Detikcom Internship Batch 6 - FrontEnd Designer</h1>
 
 <h3>Deskripsi</h3>
 <p>Project ini merupakan microsite project yang mengkampanyekan Detik Health Sudirman Run 2023. project ini 
